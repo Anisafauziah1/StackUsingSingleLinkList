@@ -31,6 +31,19 @@ namespace StackUsingSingleLinkList
             else
                 return (false);
         }
+        public void push(int element)
+        {
+            node fresh;
+            fresh = new node(element, null);
+
+            fresh.next = top;
+            top = fresh;
+            Console.WriteLine("\n" + element + "pushed");
+        }
+        public void pop()
+        {
+
+        }
     }
     internal class Program
     {
