@@ -17,6 +17,21 @@ namespace StackUsingSingleLinkList
         }
     }
 
+    class Stack
+    {
+        node top;
+        public Stack()
+        {
+            top = null;
+        }
+        bool empty()
+        {
+            if (top == null)
+                return (true);
+            else
+                return (false);
+        }
+    }
     internal class Program
     {
         static void Main(string[] args)
